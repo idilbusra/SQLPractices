@@ -18,3 +18,27 @@ select * from greengrocer;
 select fruit_name from greengrocer;
 
 drop table greengrocer;
+
+select fruit_price, fruit_weight from greengrocer;
+
+select * from greengrocer;
+
+select * from greengrocer where fruit_price >30;
+
+select * from greengrocer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
