@@ -15,3 +15,6 @@ insert into greengrocer values('Kiwi' , 'kg' , 39.99, 1.4 );
 
 select * from greengrocer;
 
+select fruit_name from greengrocer;
+
+drop table greengrocer;
