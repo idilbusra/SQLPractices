@@ -26,6 +26,19 @@ DELETE FROM people WHERE address IN('Utah','Oklahoma') ;
 
 SELECT * FROM people;
 
+UPDATE people SET name='Ken' WHERE name='Tom';
+
+SELECT * FROM people;
+
+UPDATE people SET id=id+1 WHERE id>2;
+
+SELECT * FROM people;
+
+
+
+
+
+
 
 
 
