@@ -16,6 +16,16 @@ INSERT INTO people VALUES (6, 'Tom', 'Virginia', 43);
 
 SELECT * FROM people;
 
+DROP TABLE people;
+
+DELETE FROM people WHERE age=27;
+
+SELECT * FROM people;
+
+DELETE FROM people WHERE address IN('Utah','Oklahoma') ;
+
+SELECT * FROM people;
+
 
 
 
