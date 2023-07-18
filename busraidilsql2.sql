@@ -44,7 +44,14 @@ ALTER TABLE people DROP COLUMN country;
 
 ALTER TABLE people RENAME COLUMN address TO state;
 
-
+CREATE TABLE people
+(
+name varchar(20),
+surname varchar(30),
+	
+CONSTRAINT pr_cs PRIMARY KEY(name),	
+CONSTRAINT uni_cs UNIQUE(surname)	
+);
 
 
  
