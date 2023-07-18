@@ -34,18 +34,15 @@ UPDATE people SET id=id+1 WHERE id>2;
 
 SELECT * FROM people;
 
+ALTER TABLE people ADD COLUMN surname varchar(35);
 
+SELECT * FROM people;
 
+ALTER TABLE people ADD COLUMN country DEFAULT 'USA';
 
+ALTER TABLE people DROP COLUMN country;
 
-
-
-
-
-
-
-
-
+ALTER TABLE people RENAME COLUMN address TO state;
 
 
 
