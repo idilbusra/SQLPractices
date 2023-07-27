@@ -30,4 +30,42 @@ UNION
 SELECT name,salary,company FROM workers WHERE company <> 'Honda'
 
 
+SELECT name,city FROM workers WHERE name= 'Ali Sahin'
+INTERSECT
+SELECT name,city FROM workers WHERE city!= 'Istanbul';
+
+SELECT name,city FROM workers WHERE name= 'Mehmet Ozturk'
+EXCEPT
+SELECT name,city FROM workers WHERE city<> 'Ankara';
+
+
+CREATE TABLE customers 
+(
+id int UNIQUE,
+name varchar(50) NOT NULL,
+salary int
+);
+
+
+
+INSERT INTO customers (id, name, salary) VALUES (101, 'Ali', 10000);  
+INSERT INTO customers (id, name, salary) VALUES (102, 'Ayse', 5500);  
+INSERT INTO customers (id, name, salary) VALUES (103, 'Ahmet', 7000);
+INSERT INTO customers (id, name, salary) VALUES (104, 'Mehmet', 4000);  
+INSERT INTO customers (id, name, salary) VALUES (105, 'Fatma', 4000);
+INSERT INTO customers (id, name, salary) VALUES (106, 'Merve', 8000);
+INSERT INTO customers (id, name, salary) VALUES (107, 'merve', 8000);
+
+
+SELECT * FROM customers WHERE name LIKE 'A%';
+
+SELECT * FROM customers WHERE name ILIKE 'm%';
+
+
+
+
+
+
+
+
 
