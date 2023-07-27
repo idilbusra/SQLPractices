@@ -67,6 +67,13 @@ SELECT * FROM customers WHERE name LIKE '%et%';
 
 SELECT * FROM customers WHERE name LIKE '___ve%';
 
+SELECT * FROM customers WHERE name ILIKE 'f___%';
+
+SELECT * FROM customers WHERE name ILIKE 'm__%';
+
+SELECT * FROM customers WHERE name NOT ILIKE '%a%';
+
+SELECT * FROM customers WHERE name NOT LIKE '%m%';
 
 
 
