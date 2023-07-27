@@ -14,8 +14,6 @@ INSERT INTO people VALUES (5, 'Katty', 'Virginia', 27);
 INSERT INTO people VALUES (6, 'Tom', 'Virginia', 43);
 
 
-SELECT * FROM people;
-
 DROP TABLE people;
 
 DELETE FROM people WHERE age=27;
@@ -44,14 +42,18 @@ ALTER TABLE people DROP COLUMN country;
 
 ALTER TABLE people RENAME COLUMN address TO state;
 
-CREATE TABLE people
+CREATE TABLE people2
 (
+	
 name varchar(20),
 surname varchar(30),
 	
 CONSTRAINT pr_cs PRIMARY KEY(name),	
 CONSTRAINT uni_cs UNIQUE(surname)	
 );
+
+DROP TABLE people2;
+
 
 
  
