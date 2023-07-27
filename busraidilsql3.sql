@@ -76,9 +76,11 @@ SELECT * FROM customers WHERE name NOT ILIKE '%a%';
 SELECT * FROM customers WHERE name NOT LIKE '%m%';
 
 
+SELECT * FROM customers WHERE name ~ '^[Fm]';
 
+SELECT * FROM customers WHERE name ~* '^[fm]';
 
-
+SELECT * FROM customers WHERE name ~ '[ea]$';
 
 
 
