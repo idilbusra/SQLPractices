@@ -20,5 +20,9 @@ UNION
 SELECT salary,name FROM workers WHERE salary>5000;
 
 
+SELECT city, salary FROM workers WHERE name='Mehmet Ozturk'
+UNION 
+SELECT city, salary FROM workers WHERE city='Istanbul' order by salary desc;
+
 
 
