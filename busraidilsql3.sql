@@ -25,4 +25,9 @@ UNION
 SELECT city, salary FROM workers WHERE city='Istanbul' order by salary desc;
 
 
+SELECT name,salary,company FROM workers WHERE salary<5000
+UNION
+SELECT name,salary,company FROM workers WHERE company <> 'Honda'
+
+
 
